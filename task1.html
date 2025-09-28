@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+    .card-container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        flex-grow: 1;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .card button {
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .card button:hover {
+        background-color: #005bb5;
+    }
+        </style>
+    </head>
+    <body>
+  <div class="card-container">
+    <div class="card">
+      <img src="img/web-programming.png" alt="Card 1">
+      <div class="card-content">
+        <h3>HTML basics</h3>
+        <p>HTML (HyperText Markup Language) is the foundational language for creating web pages.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/css.png" alt="Card 2">
+      <div class="card-content">
+        <h3>CSS basics</h3>
+        <p>CSS (Cascading Style Sheets) describes how HTML elements are displayed.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/js.png" alt="Card 3">
+      <div class="card-content">
+        <h3>JavaSript</h3>
+        <p>JavaScript basics encompass the fundamental concepts and structures necessary to begin programming with the language.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>

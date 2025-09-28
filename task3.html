@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 3</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                background: white;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                padding: 20px;
+            }
+            .gallery-item {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .gallery-item img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+            .gallery-item:hover img {
+                transform: scale(1.1);
+            }
+            .caption {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background: black;
+              color: white;
+              text-align: center;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            }
+            .gallery-item:hover .caption {
+              opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="cats/cat1.jpg" alt="Image 1">
+      <div class="caption">Silly cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat2.jpg" alt="Image 2">
+      <div class="caption">Normal cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat3.jpg" alt="Image 3">
+      <div class="caption">Pretty cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat4.jpg" alt="Image 4">
+      <div class="caption">Handsome cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat5.jpg" alt="Image 5">
+      <div class="caption">Cute cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat6.jpg" alt="Image 6">
+      <div class="caption">Funny cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat7.jpg" alt="Image 7">
+      <div class="caption">Sad cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat8.jpg" alt="Image 8">
+      <div class="caption">Lovely cat</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cats/cat9.jpg" alt="Image 9">
+      <div class="caption">Happy cat</div>
+    </div>
+  </div>
+    </body>
+</html>
